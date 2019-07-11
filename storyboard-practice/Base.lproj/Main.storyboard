@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="storyboard_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="p7d-Mv-l9f">
+                                <rect key="frame" x="60" y="120" width="200" height="148"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Beach Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ta-OR-UNi">
+                                <rect key="frame" x="80" y="78" width="160" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please leave a comment about my Beach Photo!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdS-MA-fNf">
+                                <rect key="frame" x="13" y="323" width="294" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8xI-Jw-3rR">
+                                <rect key="frame" x="28" y="287" width="264" height="31"/>
+                            </slider>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f0Q-ei-X3Z">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="My Beach Photos" id="iTB-Iq-u7d">
+                                        <barButtonItem key="backBarButtonItem" title="Back" id="ULm-T5-8WL"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="UsC-jE-I5m"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XMU-am-FE3"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRN-Jo-v2q">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="Edit Photo" id="fTn-ZD-7MV"/>
+                                </items>
+                            </toolbar>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w7X-WE-cmn">
+                                <rect key="frame" x="46" y="372" width="229" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqt-Ru-kjn">
+                                <rect key="frame" x="116" y="410" width="88" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Submit"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p7d-Mv-l9f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="0d7-QI-zyR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dqt-Ru-kjn" secondAttribute="trailing" constant="111" id="CW4-NJ-Ypt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tdS-MA-fNf" secondAttribute="trailing" constant="13" id="D7c-He-86y"/>
+                            <constraint firstItem="GRN-Jo-v2q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E2J-VJ-U4C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8xI-Jw-3rR" secondAttribute="trailing" constant="30" id="Mfv-Yz-fuh"/>
+                            <constraint firstItem="f0Q-ei-X3Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QK1-aq-5bE"/>
+                            <constraint firstItem="dqt-Ru-kjn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="Qcu-dp-496"/>
+                            <constraint firstItem="w7X-WE-cmn" firstAttribute="top" secondItem="tdS-MA-fNf" secondAttribute="bottom" constant="10" id="RW5-B5-jaD"/>
+                            <constraint firstItem="tdS-MA-fNf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="Sfy-N4-Gih"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p7d-Mv-l9f" secondAttribute="trailing" constant="40" id="UCh-fF-8Gi"/>
+                            <constraint firstItem="GRN-Jo-v2q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="igL-pm-exJ"/>
+                            <constraint firstItem="8xI-Jw-3rR" firstAttribute="top" secondItem="p7d-Mv-l9f" secondAttribute="bottom" constant="10" id="ktV-qa-6TZ"/>
+                            <constraint firstItem="p7d-Mv-l9f" firstAttribute="top" secondItem="7Ta-OR-UNi" secondAttribute="bottom" constant="15" id="mXt-Kj-94q"/>
+                            <constraint firstItem="w7X-WE-cmn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="mnX-22-biZ"/>
+                            <constraint firstItem="GRN-Jo-v2q" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="otc-6v-hl2"/>
+                            <constraint firstItem="f0Q-ei-X3Z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="q9P-Fn-LPp"/>
+                            <constraint firstItem="GRN-Jo-v2q" firstAttribute="top" secondItem="dqt-Ru-kjn" secondAttribute="bottom" constant="10" id="sdv-t8-zBD"/>
+                            <constraint firstItem="tdS-MA-fNf" firstAttribute="top" secondItem="8xI-Jw-3rR" secondAttribute="bottom" constant="16" id="uIS-Gs-t5J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w7X-WE-cmn" secondAttribute="trailing" constant="40" id="uSx-d1-FC0"/>
+                            <constraint firstItem="8xI-Jw-3rR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="xRD-jP-ke4"/>
+                            <constraint firstItem="f0Q-ei-X3Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xUl-SB-ctI"/>
+                            <constraint firstItem="7Ta-OR-UNi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="yjH-gw-AmE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Ta-OR-UNi" secondAttribute="trailing" constant="80" id="z0n-bt-JMk"/>
+                            <constraint firstItem="7Ta-OR-UNi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="zf8-ZO-9mp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Unknown" width="275" height="183"/>
+    </resources>
+</document>
